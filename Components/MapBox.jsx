@@ -25,13 +25,19 @@ const Map = () => {
 
     if (!map) initializeMap({ setMap, mapContainer: mapContainerRef.current });
   }, [map]);
+}
 
   const mapContainerRef = useRef(null);
 
-const  = () => {
+const mapBox = () => {
   return (
-    
+     <div className="h-screen">
+      <div
+        className="h-full w-full"
+        ref={(el) => (mapContainerRef.current = el)}
+      />
+    </div>
   )
 }
 
-export default 
+export default Mapbox;
